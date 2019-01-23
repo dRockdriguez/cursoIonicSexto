@@ -20,10 +20,12 @@ export class PushnotificationProvider {
 
       this.oneSignal.handleNotificationReceived().subscribe(() => {
         // do something when notification is received
+        console.log('Notificacion recibida');
       });
 
       this.oneSignal.handleNotificationOpened().subscribe(() => {
         // do something when a notification is opened
+        console.log('Notificacion abierta');
       });
 
       this.oneSignal.endInit();
